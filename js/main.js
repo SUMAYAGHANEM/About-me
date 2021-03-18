@@ -2,29 +2,23 @@
 
 let score=0;
 
+let yourName = prompt('what is you name?');
+alert('welcome' + ' ' + yourName);
 
-
-function function1()
+let mySport = prompt('is basketball my favorite sport?');
+let mySport2 = mySport.toLowerCase();
+if (mySport2==='yes')
 {
-
-  let yourName = prompt('what is you name?');
-  alert('welcome' + ' ' + yourName);
-
-  let mySport = prompt('is basketball my favorite sport?');
-  let mySport2 = mySport.toLowerCase();
-  if (mySport2==='yes')
-  {
-    alert('you are correct!');
-    // eslint-disable-next-line no-unused-vars
-    score++;
-  }
-  else
-  {
-    alert('you are worng!');
-  }
-
+  alert('you are correct!');
+  // eslint-disable-next-line no-unused-vars
+  score++;
 }
-function1();
+else
+{
+  alert('you are worng!');
+}
+
+
 
 // if (mySport === 'yes')
 // {
@@ -35,21 +29,20 @@ function1();
 //   console.log();('you are worng!');
 // }
 
-function function2 ()
+
+
+let myAge = prompt('Am I 24 years old?');
+let myAge2 = myAge.toLowerCase();
+if (myAge2 === 'yes')
 {
-  let myAge = prompt('Am I 24 years old?');
-  let myAge2 = myAge.toLowerCase();
-  if (myAge2 === 'yes')
-  {
-    alert('that right');
-    score++;
-  }
-  else
-  {
-    alert('thats not right!');
-  }
+  alert('that right');
+  score++;
 }
-function2();
+else
+{
+  alert('thats not right!');
+}
+
 
 // let myAge = prompt('Am I 24 years old?');
 // if (myAge === 'yes')
@@ -62,22 +55,19 @@ function2();
 // }
 
 
-function function3 ()
+let myNickNAme = prompt('is my favourit nick name semsem ?');
+// eslint-disable-next-line no-undef
+let MyNick= myNickNAme.toLowerCase();
+if (MyNick === 'no')
 {
-  let myNickNAme = prompt('is my favourit nick name semsem ?');
-  // eslint-disable-next-line no-undef
-  let MyNick= myNickNAme.toLowerCase();
-  if (MyNick === 'no')
-  {
-    alert('that right,its suma :)');
-    score++;
-  }
-  else
-  {
-    alert('thats not right, its suma!');
-  }
+  alert('that right,its suma :)');
+  score++;
 }
-function3();
+else
+{
+  alert('thats not right, its suma!');
+}
+
 
 
 // let myNickNAme = prompt('is my favourit nick name semsem ?');
@@ -89,21 +79,20 @@ function3();
 // {
 //   console.log();('thats not right, its suma!');
 // }
-function function4 ()
+
+
+let myHobby = prompt('is drawing one of my hobbies?');
+let myHobby2 = myHobby.toLowerCase();
+if (myHobby2 === 'yes')
 {
-  let myHobby = prompt('is drawing one of my hobbies?');
-  let myHobby2 = myHobby.toLowerCase();
-  if (myHobby2 === 'yes')
-  {
-    alert('that right,im a good painter :)');
-    score++;
-  }
-  else
-  {
-    alert('thats not right');
-  }
+  alert('that right,im a good painter :)');
+  score++;
 }
-function4();
+else
+{
+  alert('thats not right');
+}
+
 
 
 // let myHobby = prompt('is drawing one of my hobbies?');
@@ -115,21 +104,20 @@ function4();
 // {
 //   console.log();('thats not right');
 // }
-function function5 ()
+
+
+let myHeight = prompt('is my height 160 cm ?');
+let myHeight2 = myHeight.toLowerCase();
+if (myHeight2 === 'yes')
 {
-  let myHeight = prompt('is my height 160 cm ?');
-  let myHeight2 = myHeight.toLowerCase();
-  if (myHeight2 === 'yes')
-  {
-    alert('Nooo, im 171 cm ');
-  }
-  else
-  {
-    alert('your right, im 171 cm');
-    score++;
-  }
+  alert('Nooo, im 171 cm ');
 }
-function5();
+else
+{
+  alert('your right, im 171 cm');
+  score++;
+}
+
 
 
 // let myHeight = prompt('is my height 160 cm ?');
@@ -142,32 +130,29 @@ function5();
 //   console.log();('your right, im 171 cm');
 // }
 
-function function6()
+
+let guessing = prompt ('guess a number between 1-20' );
+
+for (let i=0; i<3; i++)
 {
-
-  let guessing = prompt ('guess a number between 1-20' );
-
-  for (let i=0; i<3; i++)
+  if ( guessing <12 )
   {
-    if ( guessing <12 )
-    {
-      alert ('this is lower than the correct number');
-      let guessing = prompt ('guess a number between 1-20' );
-    }
-    else if ( guessing > 12)
-    {
-      alert ('this is higher than the correct answer');
-      let guessing = prompt ('guess a number between 1-20' );
-    }
-    else
-    {
-      alert ('correct answer');
-      score++;
-      i=10;
-    }
+    alert ('this is lower than the correct number');
+    let guessing = prompt ('guess a number between 1-20' );
+  }
+  else if ( guessing > 12)
+  {
+    alert ('this is higher than the correct answer');
+    let guessing = prompt ('guess a number between 1-20' );
+  }
+  else
+  {
+    alert ('correct answer');
+    score++;
+    i=10;
   }
 }
-function6();
+
 
 
 // let answer = prompt ( 'what is my favorite food?');
@@ -188,32 +173,29 @@ function6();
 // alert (question);
 
 
-function function7 ()
+let food = ['mansaf','chocolate','shawarma','kabsa'];
+// let correct = false;
+for ( let s=1 ; s<6; s++ )
 {
-  let food = ['mansaf','chocolate','shawarma','kabsa'];
-  // let correct = false;
-  for ( let s=1 ; s<6; s++ )
-  {
-    let favFood = prompt('what is my favorit food?');
+  let favFood = prompt('what is my favorit food?');
 
-    for (let s=0;s<food.length; s++)
+  for (let s=0;s<food.length; s++)
+  {
+    if (favFood === food[s])
     {
-      if (favFood === food[s])
-      {
-        alert ( 'good answer');
-        // eslint-disable-next-line no-unused-vars
-        // correct=true;
-        score++;
-        break;
-      } else
-      {
-        alert ( 'thats wrong');
-        prompt('what is my favorit food?');
-      }
+      alert ( 'good answer');
+      // eslint-disable-next-line no-unused-vars
+      // correct=true;
+      score++;
+      break;
+    } else
+    {
+      alert ( 'thats wrong');
+      prompt('what is my favorit food?');
     }
   }
 }
-function7();
+
 
 alert (`your scoor is${score} out of 7`);
 
