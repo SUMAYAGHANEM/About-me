@@ -1,1 +1,46 @@
+ol {
+    list-style-type:lower-greek;
+  }
+ 
+  ol {
+    list-style-position: outside;
+  }
+  ol li {
+    background: #dbe8f5;
+    margin: 5px;
+  }
+  ol  {
+        background: #ff9999;
+        padding: 20px;
+  }
+img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    img {
+        border-radius: 15px;
+      }
+      p {
 
+        text-align: center;
+        
+        }
+        ul 
+        {
+           text-align: center;   
+        }
+        h1 {
+
+            text-align: center;
+            
+            }
+    h2{
+
+    text-align: center;
+                
+}
+h1 {
+    background-color: #ff9999;
+}

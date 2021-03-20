@@ -130,6 +130,7 @@ function6();
 function function7 ()
 {
   let food = ['mansaf','chocolate','shawarma','kabsa'];
+  let correct = false;
   for ( let s=1 ; s<6; s++ )
   {
     let favFood = prompt('what is my favorit food?');
@@ -138,10 +139,17 @@ function function7 ()
     {
       if (favFood === food[s])
       {
-        alert ( 'good answer');
+        correct=true;
         score++;
         break;
-      } else
+      }
+
+      if (correct)
+      {
+        alert ('correct answer');
+        break;
+      }
+      else
       {
         alert ( 'thats wrong');
         prompt('what is my favorit food?');
